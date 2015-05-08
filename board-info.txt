@@ -1,0 +1,2 @@
+require board=santos10lte
+require version-bootloader=P5220XXUBOB1
