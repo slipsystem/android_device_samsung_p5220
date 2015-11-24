@@ -18,18 +18,18 @@
 PRODUCT_RELEASE_NAME := p5220
 
 # Boot animation
-# TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_HEIGHT := 480
+TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 1280
+-include vendor/aicp/configs/bootanimation.mk
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p5220/full_p5220.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_p5220
+PRODUCT_NAME := aicp_p5220
 
 #Set build fingerprint / ID / Prduct Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
